@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>yourStore | Beauty Deals & Reviews</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #111827;
+      --accent: #f472b6;
+      --bg: #ffffff;
+      --text: #374151;
+      --gray: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--bg);
+      border-bottom: 1px solid var(--gray);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: var(--primary);
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      border: 1px solid var(--gray);
+      border-radius: 0.75rem;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 0.5rem;
+    }
+
+    .card h3 {
+      font-size: 1.125rem;
+      margin: 0.75rem 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid var(--gray);
+      padding: 0.75rem;
+      text-align: center;
+    }
+
+    th {
+      background: var(--gray);
+    }
+
+    footer {
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--primary);
+      border-top: 1px solid var(--gray);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>yourStore</h1>
+    <nav>
+      <a href="#deals">Deals</a>
+      <a href="#comparison">Comparison</a>
+      <a href="#blog">Blog</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Top Beauty Products & Amazon Deals</h2>
+    <p>Your curated source for the best discounts on skincare, makeup, and more.</p>
+  </section>
+
+  <section id="deals" class="section">
+    <h2>Latest Deals</h2>
+    <div class="grid">
+      <article class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Moisturizer">
+        <h3>Hydrating Facial Moisturizer</h3>
+        <p>Lightweight formula with hyaluronic acid for all‑day hydration.</p>
+        <a class="btn" href="https://www.amazon.com/dp/sample1?tag=yourStore-20" target="_blank">View on Amazon</a>
+      </article>
+      <article class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Serum">
+        <h3>Vitamin C Brightening Serum</h3>
+        <p>Fade dark spots and boost radiance with 20% pure vitamin C.</p>
+        <a class="btn" href="https://www.amazon.com/dp/sample2?tag=yourStore-20" target="_blank">Shop Deal</a>
+      </article>
+      <article class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Lipstick">
+        <h3>Velvet Matte Lipstick</h3>
+        <p>Creamy, long‑lasting color in 12 stunning shades.</p>
+        <a class="btn" href="https://www.amazon.com/dp/sample3?tag=yourStore-20" target="_blank">Shop Deal</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="comparison" class="section">
+    <h2>Product Comparison</h2>
+    <div style="overflow-x:auto">
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Main Benefit</th>
+            <th>Price *</th>
+            <th>Rating</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hydrating Facial Moisturizer</td>
+            <td>24‑hr hydration</td>
+            <td>$19.99</td>
+            <td>★★★★☆</td>
+            <td><a class="btn" href="https://www.amazon.com/dp/sample1?tag=yourStore-20" target="_blank">Buy</a></td>
+          </tr>
+          <tr>
+            <td>Vitamin C Brightening Serum</td>
+            <td>Fade dark spots</td>
+            <td>$24.99</td>
+            <td>★★★★★</td>
+            <td><a class="btn" href="https://www.amazon.com/dp/sample2?tag=yourStore-20" target="_blank">Buy</a></td>
+          </tr>
+          <tr>
+            <td>Velvet Matte Lipstick</td>
+            <td>Long‑lasting color</td>
+            <td>$9.99</td>
+            <td>★★★★☆</td>
+            <td><a class="btn" href="https://www.amazon.com/dp/sample3?tag=yourStore-20" target="_blank">Buy</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.75rem;margin-top:0.5rem;">* Prices shown are examples. Click through for current pricing.</p>
+  </section>
+
+  <section id="blog" class="section">
+    <h2>Latest Reviews</h2>
+    <div class="grid">
+      <article class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Moisturizer review">
+        <h3>Why We Love This Moisturizer</h3>
+        <p>A deep dive into the ingredients and performance after 30 days of testing.</p>
+        <a class="btn" href="https://www.amazon.com/dp/sample1?tag=yourStore-20" target="_blank">Read Review</a>
+      </article>
+      <article class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Serum review">
+        <h3>Can Vitamin C Serum Really Brighten Skin?</h3>
+        <p>We put three top serums to the test—here's what happened.</p>
+        <a class="btn" href="https://www.amazon.com/dp/sample2?tag=yourStore-20" target="_blank">Read Review</a>
+      </article>
+      <article class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Lipstick review">
+        <h3>Top 5 Long‑Wear Lipsticks Ranked</h3>
+        <p>Transfer tests, shade comparisons, and comfort ratings.</p>
+        <a class="btn" href="https://www.amazon.com/dp/sample3?tag=yourStore-20" target="_blank">Read Review</a>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 yourStore. As an Amazon Associate, we earn from qualifying purchases.</p>
+  </footer>
+</body>
+</html>
